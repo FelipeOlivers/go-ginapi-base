@@ -60,11 +60,16 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/felipeolivers/go-ginapi-base.git
    ```
-3. Execute docker command
+3. Execute docker command to build
    ```sh
-   sudo docker build . -t go-ginapi
    sudo docker run -i -t -d -p 8000:8000 go-ginapi
    ```
+
+3. Execute docker command to run application
+   ```sh
+   sudo docker run -i -t -d -p 8000:8000 go-ginapi
+   ```
+
 4. Enter your API in `Browser`
    ```JS
     http://localhost:8000/api/v1/users/1
