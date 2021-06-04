@@ -65,16 +65,15 @@ This is an example of how to list things you need to use the software and how to
    sudo docker run -i -t -d -p 8000:8000 go-ginapi
    ```
 
-3. Execute docker command to run application
+4. Execute docker command to run application
    ```sh
    sudo docker run -i -t -d -p 8000:8000 go-ginapi
    ```
 
-4. Enter your API in `Browser`
+5. Enter your API in `Browser`
    ```JS
     http://localhost:8000/api/v1/users/1
    ```
-
 
 
 <!-- USAGE EXAMPLES -->
