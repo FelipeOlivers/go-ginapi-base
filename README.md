@@ -48,9 +48,9 @@ To get a working local copy, follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Docker
   ```sh
-  npm install npm@latest -g
+  docker --version
   ```
 
 ### Installation
@@ -58,15 +58,16 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/felipeolivers/go-ginapi-base.git
    ```
-3. Install NPM packages
+3. Execute docker command
    ```sh
-   npm install
+   sudo docker build . -t go-ginapi
+   sudo docker run -i -t -d -p 8000:8000 go-ginapi
    ```
-4. Enter your API in `config.js`
+4. Enter your API in `Browser`
    ```JS
-   const API_KEY = 'ENTER YOUR API';
+    http://localhost:8000/api/v1/users/1
    ```
 
 
