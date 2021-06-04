@@ -62,7 +62,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Execute docker command to build
    ```sh
-   sudo docker run -i -t -d -p 8000:8000 go-ginapi
+   sudo docker build . -t go-ginapi
    ```
 
 4. Execute docker command to run application
