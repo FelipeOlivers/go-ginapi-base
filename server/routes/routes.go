@@ -16,7 +16,7 @@ func ConfigRoutes(router *gin.Engine) *gin.Engine {
 	{
 		users := main.Group("users")
 		{
-			users.POST("/create", c.CreateUser)
+			users.POST("/add", c.AddUser)
 			users.GET("/:id", c.GetUser)
 		}
 		contacts := main.Group("contacts")
